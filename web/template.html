@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Budget Variance Pack</title>
+<meta name="description" content="FY2026 budget vs actual variance pack for a card-payments company: P&L, revenue price-volume-mix bridge, department opex, headcount and full-year outlook.">
+<style>
+/* Layout: a month-end close pack on one page. Period controls, four headline tiles, the P&L
+   variance table beside the revenue bridge, then trend, departments, outlook and commentary. */
+:root{color-scheme:light;
+  --page:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;--grid:#e1e0d9;--axis:#c3c2b7;--ring:rgba(11,11,11,.10);
+  --s1:#2a78d6;--fav:#2a78d6;--unfav:#e34948;--neutral:#c3c2b7;--good:#0ca30c;--critical:#d03b3b;--warning:#fab219;--accent:#1F3864;
+  --sans:system-ui,-apple-system,"Segoe UI",sans-serif}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){color-scheme:dark;
+  --page:#0d0d0d;--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--muted:#898781;--grid:#2c2c2a;--axis:#383835;--ring:rgba(255,255,255,.10);
+  --s1:#3987e5;--fav:#3987e5;--unfav:#e66767;--neutral:#383835;--accent:#9db4e0}}
+:root[data-theme="dark"]{color-scheme:dark;
+  --page:#0d0d0d;--surface:#1a1a19;--ink:#f0efec;--ink2:#c3c2b7;--muted:#898781;--grid:#2c2c2a;--axis:#383835;--ring:rgba(255,255,255,.10);
+  --s1:#3987e5;--fav:#3987e5;--unfav:#e66767;--neutral:#383835;--accent:#9db4e0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font:15px/1.5 var(--sans)}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 16px 56px}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(26px,4vw,34px);line-height:1.1;margin:4px 0 6px;letter-spacing:-.01em}
+h2{font-size:15px;margin:0 0 10px}
+p{margin:0 0 10px;max-width:75ch}
+.lede{color:var(--ink2)}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 18px}
+.links a{font-size:13px;font-weight:600;color:var(--ink);text-decoration:none;border:1px solid var(--ring);background:var(--surface);padding:6px 12px;border-radius:999px}
+.links a.dl{background:var(--accent);color:var(--surface);border-color:transparent}
+.links a:hover,.links a:focus-visible{border-color:var(--s1);outline:none}
+.card{background:var(--surface);border:1px solid var(--ring);border-radius:12px;padding:16px;min-width:0}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-bottom:14px}
+.bar label{font-size:13px;color:var(--ink2)}
+select{font:14px var(--sans);color:var(--ink);background:var(--surface);border:1px solid var(--ring);border-radius:8px;padding:6px 8px}
+.seg{display:inline-flex;border:1px solid var(--ring);border-radius:8px;overflow:hidden}
+.seg button{font:600 13px var(--sans);background:transparent;color:var(--ink2);border:0;padding:7px 14px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--surface)}
+.seg button:focus-visible{outline:2px solid var(--s1);outline-offset:-2px}
+.period{font-size:18px;font-weight:600}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:14px}
+.kpi .k{font-size:12px;color:var(--ink2)}
+.kpi .v{font-size:26px;font-weight:600;margin:2px 0}
+.kpi .s{font-size:12px;color:var(--muted)}
+.kpi .st{display:flex;align-items:center;gap:6px;font-size:13px;margin-top:6px;color:var(--ink2)}
+.icon{flex:none;width:16px;height:16px;border-radius:50%;display:inline-grid;place-items:center;font-size:11px;font-weight:700;color:#fff}
+.grid2{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:14px;margin-bottom:14px}
+.grid2.even{grid-template-columns:repeat(2,minmax(0,1fr))}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{text-align:right;padding:6px 8px;border-bottom:1px solid var(--grid);white-space:nowrap;font-variant-numeric:tabular-nums}
+th:first-child,td:first-child{text-align:left}
+th{font-size:11px;font-weight:600;color:var(--ink2);text-transform:uppercase;letter-spacing:.03em}
+tr.sec td{font-weight:700;background:var(--page);color:var(--ink2);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+tr.tot td{font-weight:700;border-top:1px solid var(--ink2)}
+tr.pct td{font-style:italic;color:var(--ink2)}
+td.neg{color:var(--unfav)}
+.vbar{display:inline-block;position:relative;width:90px;height:10px;vertical-align:middle}
+.vbar::before{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--axis)}
+.vbar i{position:absolute;top:0;height:10px;border-radius:2px}
+.chart{position:relative}
+.chart svg{width:100%;height:auto;display:block;overflow:visible}
+.gl{stroke:var(--grid)} .ax{stroke:var(--axis)}
+.tk{fill:var(--muted);font:11px var(--sans);font-variant-numeric:tabular-nums}
+.lab{fill:var(--ink2);font:600 11px var(--sans);font-variant-numeric:tabular-nums}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--ink2);margin-top:6px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.legend i.ln{height:2px;width:14px;vertical-align:3px}
+.tip{position:absolute;pointer-events:none;background:var(--surface);color:var(--ink);border:1px solid var(--ring);box-shadow:0 4px 14px rgba(0,0,0,.12);font-size:12px;padding:8px 10px;border-radius:8px;white-space:nowrap;opacity:0;transition:opacity .08s;z-index:3}
+.tip b{display:block;margin-bottom:2px}
+.tip .row{display:flex;justify-content:space-between;gap:14px;font-variant-numeric:tabular-nums}
+.note{font-size:13px;color:var(--ink2)}
+.comm h3{font-size:14px;margin:14px 0 4px}
+.comm ul{margin:0;padding-left:20px} .comm li{margin-bottom:4px;max-width:90ch}
+.sec{margin-top:26px}
+@media (max-width:900px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.grid2,.grid2.even{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">FP&A · Month-end close</div>
+  <h1>Budget Variance Pack</h1>
+  <p class="lede">FY2026 budget vs actual for a card-payments company, through the September close. The same numbers come from an Excel workbook built entirely on formulas, which you can download below.</p>
+  <div class="links"><a class="dl" href="reports/FY2026_Budget_vs_Actual_Variance_Pack.xlsx" download>Download the Excel pack</a><a href="https://github.com/martinogie/budget-variance-pack">Source code on GitHub</a><a href="https://martinogie.github.io/treasury-cash-forecasting/">Treasury Cash Forecast</a><a href="https://martinogie.github.io/settlement-liquidity-dashboard/">Settlement & Liquidity Dashboard</a><a href="https://martinogie.github.io/transaction-fraud-detection/">Fraud Alert Budget Explorer</a></div>
+
+  <div class="card bar">
+    <label for="month">Reporting month</label><select id="month"></select>
+    <div class="seg" role="group" aria-label="Period"><button type="button" id="b-m" aria-pressed="false">Month</button><button type="button" id="b-y" aria-pressed="true">Year to date</button></div>
+    <span class="period" id="period" aria-live="polite"></span>
+  </div>
+
+  <div class="kpis" id="kpis"></div>
+
+  <div class="grid2">
+    <div class="card"><h2>P&L vs budget</h2><div class="tablewrap"><table id="pnl"></table></div>
+      <p class="note" style="margin-top:8px">Fav/(Unfav): positive means revenue above budget or cost below budget. Bars show each line's variance on a shared scale, blue favourable and red unfavourable. <span class="icon" style="background:var(--critical)">!</span> marks unfavourable lines past both thresholds ($50K and 5%).</p></div>
+    <div>
+      <div class="card" style="margin-bottom:14px"><h2>Product revenue bridge, $M</h2><div class="chart" id="c-bridge"></div>
+        <div class="legend"><span><i style="background:var(--fav)"></i>Adds revenue</span><span><i style="background:var(--unfav)"></i>Reduces revenue</span><span><i style="background:var(--ink2)"></i>Budget / actual</span></div>
+        <p class="note" style="margin-top:8px">Volume: more total payment volume at budget mix and rates. Mix: volume moving between products at each product's budget rate. Rate: actual take rate vs budget.</p></div>
+      <div class="card"><h2>Monthly EBITDA, $M</h2><div class="chart" id="c-ebitda"></div>
+        <div class="legend"><span><i class="ln" style="background:var(--s1)"></i>Actual</span><span><i class="ln" style="background:var(--muted)"></i>Budget</span></div></div>
+    </div>
+  </div>
+
+  <div class="grid2 even">
+    <div class="card"><h2>Operating expenses by department</h2><div class="tablewrap"><table id="dept"></table></div></div>
+    <div class="card"><h2>Full-year outlook</h2><div class="tablewrap"><table id="fy"></table></div>
+      <p class="note" style="margin-top:8px">Outlook = January to September actual + Q4 forecast. Most lines run Q4 budget at the Q3 actual-to-budget run rate. Fraud, marketing, professional fees and subscriptions use budget plus known adjustments, such as the deferred $1.08M campaign. Change any of these on the Forecast tab of the workbook.</p></div>
+  </div>
+
+  <div class="card comm sec"><h2 style="font-size:18px">September 2026 close: commentary</h2><div id="comm"></div></div>
+
+  <div class="sec">
+    <h2 style="font-size:18px">About the workbook</h2>
+    <ul class="note" style="padding-left:20px;max-width:85ch">
+      <li>Ten tabs: Control, P&L Summary, Dept Opex, Revenue Bridge (with a waterfall chart), Headcount, Forecast, Commentary, and three data tabs (GL, payment-volume drivers, headcount).</li>
+      <li>937 formulas, mostly SUMIFS over the GL extract. Change the reporting month on the Control tab and every report tab updates. No hard-coded results.</li>
+      <li>Inputs are in blue and the key assumption is in yellow. Links between tabs are in green. Variances are flagged with conditional formatting when they pass both thresholds.</li>
+      <li>Tests check that the recalculated workbook matches an independent pandas calculation, line by line.</li>
+    </ul>
+    <p class="note">All data is synthetic, generated from volume, take-rate and headcount drivers with known stories built in. Built with AI-assisted coding (Claude); the analysis, structure and review are my own.</p>
+  </div>
+</div>
+<script>
+const D=/*DATA*/null;
+const $=id=>document.getElementById(id);
+const MN=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const fm=v=>(v<0?"(":"")+"$"+(Math.abs(v)/1e6).toFixed(2)+"M"+(v<0?")":"");
+const fk=v=>(v<0?"(":"")+"$"+Math.round(Math.abs(v)/1e3).toLocaleString("en-US")+"K"+(v<0?")":"");
+const fp=v=>v==null||!isFinite(v)?"–":(v<0?"(":"")+(Math.abs(v)*100).toFixed(1)+"%"+(v<0?")":"");
+const icon=(ok)=>`<span class="icon" style="background:${ok?"var(--good)":"var(--critical)"}" aria-hidden="true">${ok?"✓":"!"}</span>`;
+let month=D.close_month, ytd=true;
+
+const ms=()=>ytd?Array.from({length:month},(_,i)=>i+1):[month];
+function amt(line,scen,months,dept){const L=D.series[line];if(!L)return 0;let s=0;
+  for(const d in L){if(dept&&d!==dept)continue;const a=L[d][scen];if(!a)continue;months.forEach(m=>s+=a[m-1])}return s}
+const sum=(lines,scen,months,dept)=>lines.reduce((a,l)=>a+amt(l,scen,months,dept),0);
+const fav=(type,a,b)=>type==="Revenue"?a-b:b-a;
+
+function pnlRows(months){
+  const R=D.revenue,C=D.cogs,O=D.opex,rows=[];
+  const v=(lines,scen)=>sum(lines,scen,months);
+  const add=(name,type,a,b,kind="line")=>rows.push({name,type,a,b,kind,var:fav(type,a,b),pct:b?fav(type,a,b)/Math.abs(b):null});
+  rows.push({kind:"sec",name:"Revenue"});R.forEach(l=>add(l,"Revenue",v([l],"Actual"),v([l],"Budget")));
+  add("Total revenue","Revenue",v(R,"Actual"),v(R,"Budget"),"tot");
+  rows.push({kind:"sec",name:"Cost of revenue"});C.forEach(l=>add(l,"Cost",v([l],"Actual"),v([l],"Budget")));
+  add("Total cost of revenue","Cost",v(C,"Actual"),v(C,"Budget"),"tot");
+  const gpA=v(R,"Actual")-v(C,"Actual"),gpB=v(R,"Budget")-v(C,"Budget");
+  add("Gross profit","Revenue",gpA,gpB,"tot");
+  rows.push({kind:"pct",name:"Gross margin",a:gpA/v(R,"Actual"),b:gpB/v(R,"Budget")});
+  rows.push({kind:"sec",name:"Operating expenses"});O.forEach(l=>add(l,"Cost",v([l],"Actual"),v([l],"Budget")));
+  add("Total operating expenses","Cost",v(O,"Actual"),v(O,"Budget"),"tot");
+  const eA=gpA-v(O,"Actual"),eB=gpB-v(O,"Budget");
+  add("EBITDA","Revenue",eA,eB,"tot");
+  rows.push({kind:"pct",name:"EBITDA margin",a:eA/v(R,"Actual"),b:eB/v(R,"Budget")});
+  return rows;
+}
+
+function pvm(months){
+  const P=D.products;let B=0,A=0;const g=P.map(p=>{const d=D.drivers[p];let bt=0,at=0,br=0,ar=0;
+    months.forEach(m=>{bt+=d.bt[m-1];at+=d.at[m-1];br+=d.bt[m-1]*d.br[m-1];ar+=d.at[m-1]*d.ar[m-1]});B+=bt;A+=at;return{p,bt,at,brev:br,arev:ar}});
+  let vol=0,mix=0,rate=0,bud=0,act=0;
+  g.forEach(x=>{const brate=x.brev/x.bt,arate=x.arev/x.at,share=x.bt/B;
+    vol+=(A-B)*share*brate;mix+=(x.at-A*share)*brate;rate+=x.at*(arate-brate);bud+=x.brev;act+=x.arev});
+  return{vol,mix,rate,bud,act};
+}
+
+function tip(el){let t=el.querySelector(".tip");if(!t){t=document.createElement("div");t.className="tip";el.appendChild(t)}return t}
+
+function bridgeChart(){
+  const b=pvm(ms()),el=$("c-bridge"),W=520,H=230,L=46,R=8,T=16,B=26;
+  const steps=[{n:"Budget",v:b.bud,total:true},{n:"Volume",v:b.vol},{n:"Mix",v:b.mix},{n:"Rate",v:b.rate},{n:"Actual",v:b.act,total:true}];
+  let run=0;steps.forEach(s=>{if(s.total){s.lo=0;s.hi=s.v;run=s.v}else{s.lo=Math.min(run,run+s.v);s.hi=Math.max(run,run+s.v);run+=s.v}});
+  const lo=Math.min(...steps.filter(s=>!s.total).map(s=>s.lo),b.bud,b.act),hi=Math.max(...steps.map(s=>s.hi));
+  const pad=(hi-lo)*.35,y0=lo-pad,y1=hi+(hi-lo)*.12;
+  const y=v=>T+(H-T-B)*(y1-Math.max(v,y0))/(y1-y0),bw=(W-L-R)/steps.length;
+  let g="";const st=(y1-y0)/4,mag=Math.pow(10,Math.floor(Math.log10(st))),step=[1,2,2.5,5,10].map(x=>x*mag).find(x=>x>=st);
+  for(let v=Math.ceil(y0/step)*step;v<=y1;v+=step)g+=`<line class="gl" x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}"/><text class="tk" x="${L-6}" y="${y(v)+4}" text-anchor="end">${(v/1e6).toFixed(0)}</text>`;
+  steps.forEach((s,i)=>{const x=L+i*bw+bw*.18,w=bw*.64,c=s.total?"var(--ink2)":s.v>=0?"var(--fav)":"var(--unfav)";
+    const top=y(s.hi),bot=y(s.lo),h=Math.max(1,bot-top);
+    g+=`<rect x="${x}" y="${top}" width="${w}" height="${h}" rx="3" fill="${c}"><title>${s.n}: ${fm(s.v)}</title></rect>`;
+    g+=`<text class="lab" x="${x+w/2}" y="${top-5}" text-anchor="middle">${s.total?fm(s.v):(s.v>=0?"+":"−")+fm(Math.abs(s.v))}</text>`;
+    g+=`<text class="tk" x="${x+w/2}" y="${H-8}" text-anchor="middle">${s.n}</text>`;
+    if(i<steps.length-1){const nx=L+(i+1)*bw+bw*.18,ry=y(s.total?s.v:(s.v>=0?s.hi:s.lo));g+=`<line x1="${x+w}" x2="${nx}" y1="${ry}" y2="${ry}" stroke="var(--axis)" stroke-dasharray="2 2"/>`}});
+  g+=`<text class="tk" x="${L}" y="${T-4}">axis starts at $${(y0/1e6).toFixed(0)}M</text>`;
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Product revenue bridge from budget to actual">${g}</svg>`;
+}
+
+function ebitdaChart(){
+  const el=$("c-ebitda"),W=520,H=200,L=40,R=10,T=10,B=24;
+  const R_=D.revenue,C=D.cogs,O=D.opex;
+  const e=(scen,m)=>sum(R_,scen,[m])-sum(C,scen,[m])-sum(O,scen,[m]);
+  const bud=MN.map((_,i)=>e("Budget",i+1)),act=MN.slice(0,D.close_month).map((_,i)=>e("Actual",i+1));
+  const all=[...bud,...act],lo=Math.min(0,...all),hi=Math.max(...all)*1.12;
+  const x=i=>L+(W-L-R)*i/11,y=v=>T+(H-T-B)*(hi-v)/(hi-lo);
+  let g="";for(let v=0;v<=hi;v+=1e6)g+=`<line class="gl" x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}"/><text class="tk" x="${L-6}" y="${y(v)+4}" text-anchor="end">${v/1e6}</text>`;
+  MN.forEach((m,i)=>g+=`<text class="tk" x="${x(i)}" y="${H-6}" text-anchor="middle">${m}</text>`);
+  g+=`<rect x="${x(month-1)-((W-L-R)/22)}" y="${T}" width="${(W-L-R)/11}" height="${H-T-B}" fill="var(--grid)" opacity=".6"/>`;
+  g+=`<path d="M${bud.map((v,i)=>`${x(i)},${y(v)}`).join("L")}" fill="none" stroke="var(--muted)" stroke-width="2" stroke-dasharray="5 4"/>`;
+  g+=`<path d="M${act.map((v,i)=>`${x(i)},${y(v)}`).join("L")}" fill="none" stroke="var(--s1)" stroke-width="2"/>`;
+  act.forEach((v,i)=>g+=`<circle cx="${x(i)}" cy="${y(v)}" r="4" fill="var(--s1)" stroke="var(--surface)" stroke-width="2"/>`);
+  g+=`<line class="hv" y1="${T}" y2="${H-B}" stroke="var(--muted)" opacity="0"/><rect class="hit" x="${L-10}" y="0" width="${W-L-R+20}" height="${H}" fill="transparent"/>`;
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Monthly EBITDA actual vs budget">${g}</svg>`;
+  const svg=el.querySelector("svg"),t=tip(el),hv=svg.querySelector(".hv");
+  svg.querySelector(".hit").addEventListener("pointermove",ev=>{const r=svg.getBoundingClientRect();let i=Math.round(((ev.clientX-r.left)*W/r.width-L)/(W-L-R)*11);i=Math.max(0,Math.min(11,i));
+    hv.setAttribute("x1",x(i));hv.setAttribute("x2",x(i));hv.setAttribute("opacity",1);
+    t.innerHTML=`<b>${MN[i]} 2026</b><div class="row"><span>Actual</span><span>${act[i]!=null?fm(act[i]):"–"}</span></div><div class="row"><span>Budget</span><span>${fm(bud[i])}</span></div>${act[i]!=null?`<div class="row"><span>Fav/(Unfav)</span><span>${fk(act[i]-bud[i])}</span></div>`:""}`;
+    t.style.opacity=1;const px=x(i)*r.width/W;t.style.left=Math.min(Math.max(px+10,0),r.width-t.offsetWidth)+"px";t.style.top="4px"});
+  svg.querySelector(".hit").addEventListener("pointerleave",()=>{t.style.opacity=0;hv.setAttribute("opacity",0)});
+}
+
+function render(){
+  const M=ms(),rows=pnlRows(M);
+  $("period").textContent=ytd?`January – ${MN[month-1]} 2026`:`${MN[month-1]} 2026`;
+  const get=n=>rows.find(r=>r.name===n);
+  const rev=get("Total revenue"),gp=get("Gross profit"),ox=get("Total operating expenses"),eb=get("EBITDA"),gm=get("Gross margin");
+  const tile=(k,r,extra)=>`<div class="card kpi"><div class="k">${k}</div><div class="v">${fm(r.a)}</div><div class="s">Budget ${fm(r.b)}${extra||""}</div><div class="st">${icon(r.var>=0)}<span>${r.var>=0?"+":"−"}${fk(Math.abs(r.var))} (${r.var>=0?"+":"−"}${Math.abs(r.pct*100).toFixed(1)}%) ${r.var>=0?"favourable":"unfavourable"}</span></div></div>`;
+  $("kpis").innerHTML=tile("Revenue",rev)+tile("Gross profit",gp,` · margin ${(gm.a*100).toFixed(1)}% vs ${(gm.b*100).toFixed(1)}%`)+tile("Operating expenses",ox)+tile("EBITDA",eb);
+  const maxv=Math.max(...rows.filter(r=>r.kind==="line").map(r=>Math.abs(r.var)));
+  const T=D.thresholds;
+  $("pnl").innerHTML=`<thead><tr><th>Line</th><th>Actual</th><th>Budget</th><th>Fav/(Unfav)</th><th>%</th><th style="text-align:center">Variance</th></tr></thead><tbody>`+rows.map(r=>{
+    if(r.kind==="sec")return`<tr class="sec"><td colspan="6">${r.name}</td></tr>`;
+    if(r.kind==="pct")return`<tr class="pct"><td>${r.name}</td><td>${(r.a*100).toFixed(1)}%</td><td>${(r.b*100).toFixed(1)}%</td><td class="${r.a<r.b?"neg":""}">${((r.a-r.b)*100).toFixed(1)} pts</td><td></td><td></td></tr>`;
+    const flagged=r.kind==="line"&&Math.abs(r.var)>=T.usd&&Math.abs(r.pct||0)>=T.pct&&r.var<0;
+    const w=r.kind==="line"?Math.min(45,45*Math.abs(r.var)/maxv):0;
+    const bar=r.kind==="line"?`<span class="vbar" title="${fk(r.var)}"><i style="${r.var>=0?`left:50%`:`right:50%`};width:${w}px;background:${r.var>=0?"var(--fav)":"var(--unfav)"}"></i></span>`:"";
+    return`<tr class="${r.kind==="tot"?"tot":""}"><td>${flagged?icon(false)+" ":""}${r.name}</td><td>${fk(r.a)}</td><td>${fk(r.b)}</td><td class="${r.var<0?"neg":""}">${fk(r.var)}</td><td class="${r.var<0?"neg":""}">${fp(r.pct)}</td><td style="text-align:center">${bar}</td></tr>`}).join("")+"</tbody>";
+  const hcm=month-1;
+  $("dept").innerHTML=`<thead><tr><th>Department</th><th>Actual</th><th>Budget</th><th>Fav/(Unfav)</th><th>%</th><th>HC act / bud</th></tr></thead><tbody>`+D.departments.map(d=>{
+    const a=sum(D.opex,"Actual",M,d),b=sum(D.opex,"Budget",M,d),v=b-a,h=D.headcount[d];
+    return`<tr><td>${d}</td><td>${fk(a)}</td><td>${fk(b)}</td><td class="${v<0?"neg":""}">${fk(v)}</td><td class="${v<0?"neg":""}">${fp(v/b)}</td><td>${h.a[hcm]} / ${h.b[hcm]}</td></tr>`}).join("")+
+    (()=>{const a=sum(D.opex,"Actual",M),b=sum(D.opex,"Budget",M),v=b-a;return`<tr class="tot"><td>Total</td><td>${fk(a)}</td><td>${fk(b)}</td><td class="${v<0?"neg":""}">${fk(v)}</td><td>${fp(v/b)}</td><td>${D.departments.reduce((s,d)=>s+D.headcount[d].a[hcm],0)} / ${D.departments.reduce((s,d)=>s+D.headcount[d].b[hcm],0)}</td></tr>`})()+"</tbody>";
+  bridgeChart();ebitdaChart();
+}
+
+(function fy(){const o=D.outlook,all=Array.from({length:12},(_,i)=>i+1),R=D.revenue,C=D.cogs,O=D.opex;
+  const out=l=>l.reduce((a,x)=>a+o[x],0),bud=l=>sum(l,"Budget",all);
+  const rs=[["Revenue","Revenue",out(R),bud(R)],["Cost of revenue","Cost",out(C),bud(C)],["Gross profit","Revenue",out(R)-out(C),bud(R)-bud(C)],["Operating expenses","Cost",out(O),bud(O)],["EBITDA","Revenue",out(R)-out(C)-out(O),bud(R)-bud(C)-bud(O)]];
+  $("fy").innerHTML=`<thead><tr><th>FY2026</th><th>Outlook</th><th>Budget</th><th>Fav/(Unfav)</th><th>%</th></tr></thead><tbody>`+rs.map(([n,t,a,b])=>{const v=fav(t,a,b);return`<tr class="${n==="EBITDA"||n==="Gross profit"?"tot":""}"><td>${n}</td><td>${fm(a)}</td><td>${fm(b)}</td><td class="${v<0?"neg":""}">${fk(v)}</td><td class="${v<0?"neg":""}">${fp(v/Math.abs(b))}</td></tr>`}).join("")+"</tbody>";
+})();
+$("comm").innerHTML=D.commentary.map(([h,b])=>`<h3>${h}</h3><ul>${b.map(x=>`<li>${x}</li>`).join("")}</ul>`).join("");
+const sel=$("month");sel.innerHTML=MN.slice(0,D.close_month).map((m,i)=>`<option value="${i+1}">${m} 2026</option>`).join("");sel.value=month;
+sel.addEventListener("change",()=>{month=+sel.value;render()});
+$("b-m").addEventListener("click",()=>{ytd=false;$("b-m").setAttribute("aria-pressed","true");$("b-y").setAttribute("aria-pressed","false");render()});
+$("b-y").addEventListener("click",()=>{ytd=true;$("b-y").setAttribute("aria-pressed","true");$("b-m").setAttribute("aria-pressed","false");render()});
+render();
+</script>
+</body>
+</html>
