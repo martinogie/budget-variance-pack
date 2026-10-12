@@ -14,6 +14,30 @@ close. It has three parts:
 [Commentary](reports/COMMENTARY.md) ·
 **[Tableau dashboard](https://public.tableau.com/app/profile/martins.ogiekpolor/viz/FY2026BudgetvsActualVarianceDashboard/FY2026BudgetvsActual)**
 
+### Power BI version
+
+[powerbi/FY2026_Budget_vs_Actual.pbix](powerbi/FY2026_Budget_vs_Actual.pbix) (open in Power BI Desktop, free): KPI cards,
+monthly EBITDA trend, variance by P&L line and by department with green/red conditional colours, and a
+quarter slicer. Clicking any bar cross-filters the page.
+
+![Power BI dashboard](powerbi/dashboard.png)
+
+DAX measures in the model:
+
+```dax
+EBITDA Budget      = SUMX(budget_vs_actual, budget_vs_actual[Budget] * budget_vs_actual[Sign])
+EBITDA Outlook     = SUMX(budget_vs_actual, budget_vs_actual[Outlook] * budget_vs_actual[Sign])
+YTD EBITDA Actual  = SUMX(FILTER(budget_vs_actual, NOT ISBLANK(budget_vs_actual[Actual])),
+                          budget_vs_actual[Actual] * budget_vs_actual[Sign])
+YTD EBITDA Budget  = SUMX(FILTER(budget_vs_actual, NOT ISBLANK(budget_vs_actual[Actual])),
+                          budget_vs_actual[Budget] * budget_vs_actual[Sign])
+Variance vs Budget = [YTD EBITDA Actual] - [YTD EBITDA Budget]
+Variance %         = DIVIDE([Variance vs Budget], ABS([YTD EBITDA Budget]))
+Variance Color     = IF([Variance vs Budget] >= 0, "#1BAF7A", "#D03B3B")   -- conditional formatting
+```
+
+### Tableau version
+
 The Tableau Public dashboard is built from [tableau/budget_vs_actual.csv](tableau/budget_vs_actual.csv):
 one row per month, department and P&L line, with budget, actual, Q4 forecast and a sign column
 (+1 revenue, −1 cost) so EBITDA and favourable/unfavourable variance are simple calculated fields.
