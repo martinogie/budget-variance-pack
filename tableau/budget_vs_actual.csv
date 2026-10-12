@@ -1,0 +1,373 @@
+Date,Quarter,Department,Section,Line,Type,Sign,Budget,Actual,Forecast,Outlook
+2026-01-01,Q1,Corporate,COGS,Fraud & chargeback losses,Cost,-1,318541.2,318134.51,,318134.51
+2026-01-01,Q1,Corporate,COGS,Interchange & scheme fees,Cost,-1,8394889.0,8124137.22,,8124137.22
+2026-01-01,Q1,Corporate,COGS,Processing & bank fees,Cost,-1,568824.0,549994.34,,549994.34
+2026-01-01,Q1,Corporate,Revenue,ACH,Revenue,1,639927.0,631985.06,,631985.06
+2026-01-01,Q1,Corporate,Revenue,Card processing - Enterprise,Revenue,1,6399270.0,6208403.68,,6208403.68
+2026-01-01,Q1,Corporate,Revenue,Card processing - SMB,Revenue,1,7148210.0,6816117.7,,6816117.7
+2026-01-01,Q1,Corporate,Revenue,Instant payouts (RTP),Revenue,1,379220.0,385901.41,,385901.41
+2026-01-01,Q1,Corporate,Revenue,Interest on client float,Revenue,1,1593750.0,1675425.0,,1675425.0
+2026-01-01,Q1,Corporate,Revenue,Platform subscriptions,Revenue,1,1200000.0,1188789.3,,1188789.3
+2026-01-01,Q1,Customer Support,Opex,Contractors,Cost,-1,40000.0,38363.12,,38363.12
+2026-01-01,Q1,Customer Support,Opex,Salaries & benefits,Cost,-1,375000.0,375930.39,,375930.39
+2026-01-01,Q1,Customer Support,Opex,Software & cloud,Cost,-1,55000.0,57179.1,,57179.1
+2026-01-01,Q1,Engineering,Opex,Contractors,Cost,-1,90000.0,87990.1,,87990.1
+2026-01-01,Q1,Engineering,Opex,Salaries & benefits,Cost,-1,1662500.0,1695852.23,,1695852.23
+2026-01-01,Q1,Engineering,Opex,Software & cloud,Cost,-1,420000.0,444905.87,,444905.87
+2026-01-01,Q1,Engineering,Opex,Travel & entertainment,Cost,-1,15000.0,15330.13,,15330.13
+2026-01-01,Q1,G&A,Opex,Professional fees,Cost,-1,120000.0,128062.33,,128062.33
+2026-01-01,Q1,G&A,Opex,Rent & facilities,Cost,-1,260000.0,258865.26,,258865.26
+2026-01-01,Q1,G&A,Opex,Salaries & benefits,Cost,-1,432000.0,435313.18,,435313.18
+2026-01-01,Q1,G&A,Opex,Software & cloud,Cost,-1,30000.0,30847.49,,30847.49
+2026-01-01,Q1,G&A,Opex,Travel & entertainment,Cost,-1,10000.0,10111.53,,10111.53
+2026-01-01,Q1,Product,Opex,Salaries & benefits,Cost,-1,396000.0,397963.88,,397963.88
+2026-01-01,Q1,Product,Opex,Software & cloud,Cost,-1,40000.0,40534.53,,40534.53
+2026-01-01,Q1,Product,Opex,Travel & entertainment,Cost,-1,8000.0,7694.21,,7694.21
+2026-01-01,Q1,Risk & Compliance,Opex,Professional fees,Cost,-1,45000.0,45824.94,,45824.94
+2026-01-01,Q1,Risk & Compliance,Opex,Salaries & benefits,Cost,-1,375000.0,355014.9,,355014.9
+2026-01-01,Q1,Risk & Compliance,Opex,Software & cloud,Cost,-1,70000.0,70276.2,,70276.2
+2026-01-01,Q1,Sales & Marketing,Opex,Marketing programs,Cost,-1,350000.0,367545.33,,367545.33
+2026-01-01,Q1,Sales & Marketing,Opex,Salaries & benefits,Cost,-1,715000.0,728110.8,,728110.8
+2026-01-01,Q1,Sales & Marketing,Opex,Software & cloud,Cost,-1,35000.0,37445.25,,37445.25
+2026-01-01,Q1,Sales & Marketing,Opex,Travel & entertainment,Cost,-1,60000.0,58233.84,,58233.84
+2026-02-01,Q1,Corporate,COGS,Fraud & chargeback losses,Cost,-1,330354.6,328669.55,,328669.55
+2026-02-01,Q1,Corporate,COGS,Interchange & scheme fees,Cost,-1,8706578.0,8672634.02,,8672634.02
+2026-02-01,Q1,Corporate,COGS,Processing & bank fees,Cost,-1,589697.6,574793.33,,574793.33
+2026-02-01,Q1,Corporate,Revenue,ACH,Revenue,1,661297.5,651331.02,,651331.02
+2026-02-01,Q1,Corporate,Revenue,Card processing - Enterprise,Revenue,1,6645712.5,6557773.55,,6557773.55
+2026-02-01,Q1,Corporate,Revenue,Card processing - SMB,Revenue,1,7401554.0,7600357.71,,7600357.71
+2026-02-01,Q1,Corporate,Revenue,Instant payouts (RTP),Revenue,1,395760.0,432724.29,,432724.29
+2026-02-01,Q1,Corporate,Revenue,Interest on client float,Revenue,1,1593750.0,1682100.0,,1682100.0
+2026-02-01,Q1,Corporate,Revenue,Platform subscriptions,Revenue,1,1212000.0,1176551.51,,1176551.51
+2026-02-01,Q1,Customer Support,Opex,Contractors,Cost,-1,40000.0,37205.61,,37205.61
+2026-02-01,Q1,Customer Support,Opex,Salaries & benefits,Cost,-1,375000.0,379817.11,,379817.11
+2026-02-01,Q1,Customer Support,Opex,Software & cloud,Cost,-1,55000.0,55667.22,,55667.22
+2026-02-01,Q1,Engineering,Opex,Contractors,Cost,-1,90000.0,92180.8,,92180.8
+2026-02-01,Q1,Engineering,Opex,Salaries & benefits,Cost,-1,1697500.0,1737101.04,,1737101.04
+2026-02-01,Q1,Engineering,Opex,Software & cloud,Cost,-1,420000.0,473559.23,,473559.23
+2026-02-01,Q1,Engineering,Opex,Travel & entertainment,Cost,-1,15000.0,15217.14,,15217.14
+2026-02-01,Q1,G&A,Opex,Professional fees,Cost,-1,120000.0,109685.44,,109685.44
+2026-02-01,Q1,G&A,Opex,Rent & facilities,Cost,-1,260000.0,261361.51,,261361.51
+2026-02-01,Q1,G&A,Opex,Salaries & benefits,Cost,-1,432000.0,429766.48,,429766.48
+2026-02-01,Q1,G&A,Opex,Software & cloud,Cost,-1,30000.0,32241.32,,32241.32
+2026-02-01,Q1,G&A,Opex,Travel & entertainment,Cost,-1,10000.0,9977.09,,9977.09
+2026-02-01,Q1,Product,Opex,Salaries & benefits,Cost,-1,396000.0,391293.6,,391293.6
+2026-02-01,Q1,Product,Opex,Software & cloud,Cost,-1,40000.0,43006.14,,43006.14
+2026-02-01,Q1,Product,Opex,Travel & entertainment,Cost,-1,8000.0,8082.65,,8082.65
+2026-02-01,Q1,Risk & Compliance,Opex,Professional fees,Cost,-1,45000.0,41582.97,,41582.97
+2026-02-01,Q1,Risk & Compliance,Opex,Salaries & benefits,Cost,-1,375000.0,348602.03,,348602.03
+2026-02-01,Q1,Risk & Compliance,Opex,Software & cloud,Cost,-1,70000.0,75337.51,,75337.51
+2026-02-01,Q1,Sales & Marketing,Opex,Marketing programs,Cost,-1,350000.0,328260.66,,328260.66
+2026-02-01,Q1,Sales & Marketing,Opex,Salaries & benefits,Cost,-1,728000.0,724138.69,,724138.69
+2026-02-01,Q1,Sales & Marketing,Opex,Software & cloud,Cost,-1,35000.0,32931.88,,32931.88
+2026-02-01,Q1,Sales & Marketing,Opex,Travel & entertainment,Cost,-1,60000.0,61584.74,,61584.74
+2026-03-01,Q1,Corporate,COGS,Fraud & chargeback losses,Cost,-1,345206.4,328229.73,,328229.73
+2026-03-01,Q1,Corporate,COGS,Interchange & scheme fees,Cost,-1,9098379.5,8930074.28,,8930074.28
+2026-03-01,Q1,Corporate,COGS,Processing & bank fees,Cost,-1,615980.0,606099.66,,606099.66
+2026-03-01,Q1,Corporate,Revenue,ACH,Revenue,1,688567.5,680704.67,,680704.67
+2026-03-01,Q1,Corporate,Revenue,Card processing - Enterprise,Revenue,1,6954007.5,6903533.66,,6903533.66
+2026-03-01,Q1,Corporate,Revenue,Card processing - SMB,Revenue,1,7722033.0,7502161.55,,7502161.55
+2026-03-01,Q1,Corporate,Revenue,Instant payouts (RTP),Revenue,1,416160.0,455631.71,,455631.71
+2026-03-01,Q1,Corporate,Revenue,Interest on client float,Revenue,1,1593750.0,1688775.0,,1688775.0
+2026-03-01,Q1,Corporate,Revenue,Platform subscriptions,Revenue,1,1224120.0,1220296.48,,1220296.48
+2026-03-01,Q1,Customer Support,Opex,Contractors,Cost,-1,40000.0,41177.69,,41177.69
+2026-03-01,Q1,Customer Support,Opex,Salaries & benefits,Cost,-1,382500.0,383475.28,,383475.28
+2026-03-01,Q1,Customer Support,Opex,Software & cloud,Cost,-1,55000.0,54370.53,,54370.53
+2026-03-01,Q1,Engineering,Opex,Contractors,Cost,-1,90000.0,93766.66,,93766.66
+2026-03-01,Q1,Engineering,Opex,Salaries & benefits,Cost,-1,1715000.0,1724940.03,,1724940.03
+2026-03-01,Q1,Engineering,Opex,Software & cloud,Cost,-1,420000.0,409237.1,,409237.1
+2026-03-01,Q1,Engineering,Opex,Travel & entertainment,Cost,-1,15000.0,13357.73,,13357.73
+2026-03-01,Q1,G&A,Opex,Professional fees,Cost,-1,120000.0,123067.15,,123067.15
+2026-03-01,Q1,G&A,Opex,Rent & facilities,Cost,-1,260000.0,262626.87,,262626.87
+2026-03-01,Q1,G&A,Opex,Salaries & benefits,Cost,-1,432000.0,428639.45,,428639.45
+2026-03-01,Q1,G&A,Opex,Software & cloud,Cost,-1,30000.0,30248.82,,30248.82
+2026-03-01,Q1,G&A,Opex,Travel & entertainment,Cost,-1,10000.0,9851.84,,9851.84
+2026-03-01,Q1,Product,Opex,Salaries & benefits,Cost,-1,412500.0,416640.36,,416640.36
+2026-03-01,Q1,Product,Opex,Software & cloud,Cost,-1,40000.0,41603.81,,41603.81
+2026-03-01,Q1,Product,Opex,Travel & entertainment,Cost,-1,8000.0,7508.54,,7508.54
+2026-03-01,Q1,Risk & Compliance,Opex,Professional fees,Cost,-1,45000.0,44260.96,,44260.96
+2026-03-01,Q1,Risk & Compliance,Opex,Salaries & benefits,Cost,-1,387500.0,374684.13,,374684.13
+2026-03-01,Q1,Risk & Compliance,Opex,Software & cloud,Cost,-1,70000.0,69110.67,,69110.67
+2026-03-01,Q1,Sales & Marketing,Opex,Marketing programs,Cost,-1,350000.0,354147.47,,354147.47
+2026-03-01,Q1,Sales & Marketing,Opex,Salaries & benefits,Cost,-1,728000.0,725430.69,,725430.69
+2026-03-01,Q1,Sales & Marketing,Opex,Software & cloud,Cost,-1,35000.0,35105.09,,35105.09
+2026-03-01,Q1,Sales & Marketing,Opex,Travel & entertainment,Cost,-1,60000.0,61616.36,,61616.36
+2026-04-01,Q2,Corporate,COGS,Fraud & chargeback losses,Cost,-1,360403.2,287693.55,,287693.55
+2026-04-01,Q2,Corporate,COGS,Interchange & scheme fees,Cost,-1,9499312.0,9596160.95,,9596160.95
+2026-04-01,Q2,Corporate,COGS,Processing & bank fees,Cost,-1,642860.8,639389.28,,639389.28
+2026-04-01,Q2,Corporate,Revenue,ACH,Revenue,1,716319.0,732896.96,,732896.96
+2026-04-01,Q2,Corporate,Revenue,Card processing - Enterprise,Revenue,1,7270087.5,7319409.5,,7319409.5
+2026-04-01,Q2,Corporate,Revenue,Card processing - SMB,Revenue,1,8049153.0,7665029.37,,7665029.37
+2026-04-01,Q2,Corporate,Revenue,Instant payouts (RTP),Revenue,1,437220.0,487465.56,,487465.56
+2026-04-01,Q2,Corporate,Revenue,Interest on client float,Revenue,1,1593750.0,1695450.0,,1695450.0
+2026-04-01,Q2,Corporate,Revenue,Platform subscriptions,Revenue,1,1236361.2,1253424.91,,1253424.91
+2026-04-01,Q2,Customer Support,Opex,Contractors,Cost,-1,40000.0,41849.31,,41849.31
+2026-04-01,Q2,Customer Support,Opex,Salaries & benefits,Cost,-1,382500.0,384032.08,,384032.08
+2026-04-01,Q2,Customer Support,Opex,Software & cloud,Cost,-1,55000.0,54586.67,,54586.67
+2026-04-01,Q2,Engineering,Opex,Contractors,Cost,-1,90000.0,198713.45,,198713.45
+2026-04-01,Q2,Engineering,Opex,Salaries & benefits,Cost,-1,1750000.0,1703813.34,,1703813.34
+2026-04-01,Q2,Engineering,Opex,Software & cloud,Cost,-1,420000.0,490883.4,,490883.4
+2026-04-01,Q2,Engineering,Opex,Travel & entertainment,Cost,-1,15000.0,15821.55,,15821.55
+2026-04-01,Q2,G&A,Opex,Professional fees,Cost,-1,120000.0,115911.48,,115911.48
+2026-04-01,Q2,G&A,Opex,Rent & facilities,Cost,-1,260000.0,263205.7,,263205.7
+2026-04-01,Q2,G&A,Opex,Salaries & benefits,Cost,-1,445500.0,442677.34,,442677.34
+2026-04-01,Q2,G&A,Opex,Software & cloud,Cost,-1,30000.0,29952.26,,29952.26
+2026-04-01,Q2,G&A,Opex,Travel & entertainment,Cost,-1,10000.0,10190.24,,10190.24
+2026-04-01,Q2,Product,Opex,Salaries & benefits,Cost,-1,412500.0,415675.18,,415675.18
+2026-04-01,Q2,Product,Opex,Software & cloud,Cost,-1,40000.0,43877.07,,43877.07
+2026-04-01,Q2,Product,Opex,Travel & entertainment,Cost,-1,8000.0,7810.78,,7810.78
+2026-04-01,Q2,Risk & Compliance,Opex,Professional fees,Cost,-1,45000.0,48070.13,,48070.13
+2026-04-01,Q2,Risk & Compliance,Opex,Salaries & benefits,Cost,-1,387500.0,379690.28,,379690.28
+2026-04-01,Q2,Risk & Compliance,Opex,Software & cloud,Cost,-1,70000.0,71248.2,,71248.2
+2026-04-01,Q2,Sales & Marketing,Opex,Marketing programs,Cost,-1,350000.0,361214.59,,361214.59
+2026-04-01,Q2,Sales & Marketing,Opex,Salaries & benefits,Cost,-1,741000.0,755170.82,,755170.82
+2026-04-01,Q2,Sales & Marketing,Opex,Software & cloud,Cost,-1,35000.0,34701.01,,34701.01
+2026-04-01,Q2,Sales & Marketing,Opex,Travel & entertainment,Cost,-1,60000.0,59893.24,,59893.24
+2026-05-01,Q2,Corporate,COGS,Fraud & chargeback losses,Cost,-1,373098.6,307153.11,,307153.11
+2026-05-01,Q2,Corporate,COGS,Interchange & scheme fees,Cost,-1,9834348.5,9995738.97,,9995738.97
+2026-05-01,Q2,Corporate,COGS,Processing & bank fees,Cost,-1,665263.2,688412.76,,688412.76
+2026-05-01,Q2,Corporate,Revenue,ACH,Revenue,1,738904.5,745080.82,,745080.82
+2026-05-01,Q2,Corporate,Revenue,Card processing - Enterprise,Revenue,1,7536465.0,7572805.03,,7572805.03
+2026-05-01,Q2,Corporate,Revenue,Card processing - SMB,Revenue,1,8319433.0,8150607.68,,8150607.68
+2026-05-01,Q2,Corporate,Revenue,Instant payouts (RTP),Revenue,1,455470.0,540547.19,,540547.19
+2026-05-01,Q2,Corporate,Revenue,Interest on client float,Revenue,1,1593750.0,1702125.0,,1702125.0
+2026-05-01,Q2,Corporate,Revenue,Platform subscriptions,Revenue,1,1248724.81,1235615.2,,1235615.2
+2026-05-01,Q2,Customer Support,Opex,Contractors,Cost,-1,40000.0,40469.62,,40469.62
+2026-05-01,Q2,Customer Support,Opex,Salaries & benefits,Cost,-1,382500.0,379869.53,,379869.53
+2026-05-01,Q2,Customer Support,Opex,Software & cloud,Cost,-1,55000.0,50251.63,,50251.63
+2026-05-01,Q2,Engineering,Opex,Contractors,Cost,-1,90000.0,203907.5,,203907.5
+2026-05-01,Q2,Engineering,Opex,Salaries & benefits,Cost,-1,1767500.0,1694755.76,,1694755.76
+2026-05-01,Q2,Engineering,Opex,Software & cloud,Cost,-1,420000.0,431006.27,,431006.27
+2026-05-01,Q2,Engineering,Opex,Travel & entertainment,Cost,-1,15000.0,14201.13,,14201.13
+2026-05-01,Q2,G&A,Opex,Professional fees,Cost,-1,120000.0,120908.28,,120908.28
+2026-05-01,Q2,G&A,Opex,Rent & facilities,Cost,-1,260000.0,240395.15,,240395.15
+2026-05-01,Q2,G&A,Opex,Salaries & benefits,Cost,-1,445500.0,446899.54,,446899.54
+2026-05-01,Q2,G&A,Opex,Software & cloud,Cost,-1,30000.0,30714.24,,30714.24
+2026-05-01,Q2,G&A,Opex,Travel & entertainment,Cost,-1,10000.0,9437.72,,9437.72
+2026-05-01,Q2,Product,Opex,Salaries & benefits,Cost,-1,412500.0,416068.36,,416068.36
+2026-05-01,Q2,Product,Opex,Software & cloud,Cost,-1,40000.0,38840.44,,38840.44
+2026-05-01,Q2,Product,Opex,Travel & entertainment,Cost,-1,8000.0,8085.28,,8085.28
+2026-05-01,Q2,Risk & Compliance,Opex,Professional fees,Cost,-1,45000.0,46018.21,,46018.21
+2026-05-01,Q2,Risk & Compliance,Opex,Salaries & benefits,Cost,-1,400000.0,390517.54,,390517.54
+2026-05-01,Q2,Risk & Compliance,Opex,Software & cloud,Cost,-1,70000.0,68760.85,,68760.85
+2026-05-01,Q2,Sales & Marketing,Opex,Marketing programs,Cost,-1,350000.0,361083.79,,361083.79
+2026-05-01,Q2,Sales & Marketing,Opex,Salaries & benefits,Cost,-1,754000.0,759887.14,,759887.14
+2026-05-01,Q2,Sales & Marketing,Opex,Software & cloud,Cost,-1,35000.0,35266.5,,35266.5
+2026-05-01,Q2,Sales & Marketing,Opex,Travel & entertainment,Cost,-1,60000.0,56094.62,,56094.62
+2026-06-01,Q2,Corporate,COGS,Fraud & chargeback losses,Cost,-1,381068.4,423963.57,,423963.57
+2026-06-01,Q2,Corporate,COGS,Interchange & scheme fees,Cost,-1,10044855.0,10661917.53,,10661917.53
+2026-06-01,Q2,Corporate,COGS,Processing & bank fees,Cost,-1,679230.4,739985.73,,739985.73
+2026-06-01,Q2,Corporate,Revenue,ACH,Revenue,1,751999.5,762959.42,,762959.42
+2026-06-01,Q2,Corporate,Revenue,Card processing - Enterprise,Revenue,1,7707960.0,8502029.04,,8502029.04
+2026-06-01,Q2,Corporate,Revenue,Card processing - SMB,Revenue,1,8483602.0,8143315.01,,8143315.01
+2026-06-01,Q2,Corporate,Revenue,Instant payouts (RTP),Revenue,1,468130.0,576532.85,,576532.85
+2026-06-01,Q2,Corporate,Revenue,Interest on client float,Revenue,1,1593750.0,1708800.0,,1708800.0
+2026-06-01,Q2,Corporate,Revenue,Platform subscriptions,Revenue,1,1261212.06,1221059.49,,1221059.49
+2026-06-01,Q2,Customer Support,Opex,Contractors,Cost,-1,40000.0,37558.4,,37558.4
+2026-06-01,Q2,Customer Support,Opex,Salaries & benefits,Cost,-1,390000.0,389968.52,,389968.52
+2026-06-01,Q2,Customer Support,Opex,Software & cloud,Cost,-1,55000.0,55541.08,,55541.08
+2026-06-01,Q2,Engineering,Opex,Contractors,Cost,-1,90000.0,197341.27,,197341.27
+2026-06-01,Q2,Engineering,Opex,Salaries & benefits,Cost,-1,1802500.0,1719514.62,,1719514.62
+2026-06-01,Q2,Engineering,Opex,Software & cloud,Cost,-1,420000.0,463299.99,,463299.99
+2026-06-01,Q2,Engineering,Opex,Travel & entertainment,Cost,-1,15000.0,14737.23,,14737.23
+2026-06-01,Q2,G&A,Opex,Professional fees,Cost,-1,120000.0,113669.24,,113669.24
+2026-06-01,Q2,G&A,Opex,Rent & facilities,Cost,-1,260000.0,279851.16,,279851.16
+2026-06-01,Q2,G&A,Opex,Salaries & benefits,Cost,-1,445500.0,443760.62,,443760.62
+2026-06-01,Q2,G&A,Opex,Software & cloud,Cost,-1,30000.0,28460.1,,28460.1
+2026-06-01,Q2,G&A,Opex,Travel & entertainment,Cost,-1,10000.0,10442.52,,10442.52
+2026-06-01,Q2,Product,Opex,Salaries & benefits,Cost,-1,429000.0,426516.62,,426516.62
+2026-06-01,Q2,Product,Opex,Software & cloud,Cost,-1,40000.0,40773.86,,40773.86
+2026-06-01,Q2,Product,Opex,Travel & entertainment,Cost,-1,8000.0,7976.67,,7976.67
+2026-06-01,Q2,Risk & Compliance,Opex,Professional fees,Cost,-1,45000.0,43210.32,,43210.32
+2026-06-01,Q2,Risk & Compliance,Opex,Salaries & benefits,Cost,-1,400000.0,379035.98,,379035.98
+2026-06-01,Q2,Risk & Compliance,Opex,Software & cloud,Cost,-1,70000.0,71791.58,,71791.58
+2026-06-01,Q2,Sales & Marketing,Opex,Marketing programs,Cost,-1,350000.0,357496.81,,357496.81
+2026-06-01,Q2,Sales & Marketing,Opex,Salaries & benefits,Cost,-1,767000.0,752586.75,,752586.75
+2026-06-01,Q2,Sales & Marketing,Opex,Software & cloud,Cost,-1,35000.0,37662.46,,37662.46
+2026-06-01,Q2,Sales & Marketing,Opex,Travel & entertainment,Cost,-1,60000.0,58575.23,,58575.23
+2026-07-01,Q3,Corporate,COGS,Fraud & chargeback losses,Cost,-1,383328.6,443009.99,,443009.99
+2026-07-01,Q3,Corporate,COGS,Interchange & scheme fees,Cost,-1,10104874.0,10980263.76,,10980263.76
+2026-07-01,Q3,Corporate,COGS,Processing & bank fees,Cost,-1,683016.0,753252.03,,753252.03
+2026-07-01,Q3,Corporate,Revenue,ACH,Revenue,1,753759.0,753139.4,,753139.4
+2026-07-01,Q3,Corporate,Revenue,Card processing - Enterprise,Revenue,1,7764255.0,8648362.05,,8648362.05
+2026-07-01,Q3,Corporate,Revenue,Card processing - SMB,Revenue,1,8520287.0,8321512.96,,8321512.96
+2026-07-01,Q3,Corporate,Revenue,Instant payouts (RTP),Revenue,1,473870.0,601859.16,,601859.16
+2026-07-01,Q3,Corporate,Revenue,Interest on client float,Revenue,1,1593750.0,1715475.0,,1715475.0
+2026-07-01,Q3,Corporate,Revenue,Platform subscriptions,Revenue,1,1273824.18,1247186.44,,1247186.44
+2026-07-01,Q3,Customer Support,Opex,Contractors,Cost,-1,40000.0,37253.99,,37253.99
+2026-07-01,Q3,Customer Support,Opex,Salaries & benefits,Cost,-1,390000.0,390343.76,,390343.76
+2026-07-01,Q3,Customer Support,Opex,Software & cloud,Cost,-1,55000.0,55400.2,,55400.2
+2026-07-01,Q3,Engineering,Opex,Contractors,Cost,-1,90000.0,195560.86,,195560.86
+2026-07-01,Q3,Engineering,Opex,Salaries & benefits,Cost,-1,1820000.0,1692910.26,,1692910.26
+2026-07-01,Q3,Engineering,Opex,Software & cloud,Cost,-1,420000.0,464962.65,,464962.65
+2026-07-01,Q3,Engineering,Opex,Travel & entertainment,Cost,-1,15000.0,15204.69,,15204.69
+2026-07-01,Q3,G&A,Opex,Professional fees,Cost,-1,120000.0,197339.79,,197339.79
+2026-07-01,Q3,G&A,Opex,Rent & facilities,Cost,-1,260000.0,258451.0,,258451.0
+2026-07-01,Q3,G&A,Opex,Salaries & benefits,Cost,-1,445500.0,448660.06,,448660.06
+2026-07-01,Q3,G&A,Opex,Software & cloud,Cost,-1,30000.0,26651.17,,26651.17
+2026-07-01,Q3,G&A,Opex,Travel & entertainment,Cost,-1,10000.0,9876.34,,9876.34
+2026-07-01,Q3,Product,Opex,Salaries & benefits,Cost,-1,429000.0,424355.17,,424355.17
+2026-07-01,Q3,Product,Opex,Software & cloud,Cost,-1,40000.0,41783.1,,41783.1
+2026-07-01,Q3,Product,Opex,Travel & entertainment,Cost,-1,8000.0,8142.47,,8142.47
+2026-07-01,Q3,Risk & Compliance,Opex,Professional fees,Cost,-1,45000.0,43073.1,,43073.1
+2026-07-01,Q3,Risk & Compliance,Opex,Salaries & benefits,Cost,-1,412500.0,433049.09,,433049.09
+2026-07-01,Q3,Risk & Compliance,Opex,Software & cloud,Cost,-1,70000.0,69845.13,,69845.13
+2026-07-01,Q3,Sales & Marketing,Opex,Marketing programs,Cost,-1,350000.0,348628.29,,348628.29
+2026-07-01,Q3,Sales & Marketing,Opex,Salaries & benefits,Cost,-1,767000.0,776773.91,,776773.91
+2026-07-01,Q3,Sales & Marketing,Opex,Software & cloud,Cost,-1,35000.0,35888.38,,35888.38
+2026-07-01,Q3,Sales & Marketing,Opex,Travel & entertainment,Cost,-1,60000.0,61258.14,,61258.14
+2026-08-01,Q3,Corporate,COGS,Fraud & chargeback losses,Cost,-1,380437.8,1300489.08,,1300489.08
+2026-08-01,Q3,Corporate,COGS,Interchange & scheme fees,Cost,-1,10029114.0,10791688.32,,10791688.32
+2026-08-01,Q3,Corporate,COGS,Processing & bank fees,Cost,-1,677627.2,747122.32,,747122.32
+2026-08-01,Q3,Corporate,Revenue,ACH,Revenue,1,745402.5,771111.84,,771111.84
+2026-08-01,Q3,Corporate,Revenue,Card processing - Enterprise,Revenue,1,7716195.0,8914140.31,,8914140.31
+2026-08-01,Q3,Corporate,Revenue,Card processing - SMB,Revenue,1,8442509.0,7927770.58,,7927770.58
+2026-08-01,Q3,Corporate,Revenue,Instant payouts (RTP),Revenue,1,473260.0,606919.89,,606919.89
+2026-08-01,Q3,Corporate,Revenue,Interest on client float,Revenue,1,1593750.0,1722150.0,,1722150.0
+2026-08-01,Q3,Corporate,Revenue,Platform subscriptions,Revenue,1,1286562.42,1261976.95,,1261976.95
+2026-08-01,Q3,Customer Support,Opex,Contractors,Cost,-1,40000.0,39332.77,,39332.77
+2026-08-01,Q3,Customer Support,Opex,Salaries & benefits,Cost,-1,397500.0,397608.95,,397608.95
+2026-08-01,Q3,Customer Support,Opex,Software & cloud,Cost,-1,55000.0,56633.75,,56633.75
+2026-08-01,Q3,Engineering,Opex,Contractors,Cost,-1,90000.0,211618.24,,211618.24
+2026-08-01,Q3,Engineering,Opex,Salaries & benefits,Cost,-1,1855000.0,1723885.51,,1723885.51
+2026-08-01,Q3,Engineering,Opex,Software & cloud,Cost,-1,420000.0,486100.94,,486100.94
+2026-08-01,Q3,Engineering,Opex,Travel & entertainment,Cost,-1,15000.0,15673.4,,15673.4
+2026-08-01,Q3,G&A,Opex,Professional fees,Cost,-1,120000.0,124227.88,,124227.88
+2026-08-01,Q3,G&A,Opex,Rent & facilities,Cost,-1,260000.0,263232.51,,263232.51
+2026-08-01,Q3,G&A,Opex,Salaries & benefits,Cost,-1,445500.0,449419.62,,449419.62
+2026-08-01,Q3,G&A,Opex,Software & cloud,Cost,-1,30000.0,29790.65,,29790.65
+2026-08-01,Q3,G&A,Opex,Travel & entertainment,Cost,-1,10000.0,10037.91,,10037.91
+2026-08-01,Q3,Product,Opex,Salaries & benefits,Cost,-1,445500.0,440612.52,,440612.52
+2026-08-01,Q3,Product,Opex,Software & cloud,Cost,-1,40000.0,39105.9,,39105.9
+2026-08-01,Q3,Product,Opex,Travel & entertainment,Cost,-1,8000.0,8333.36,,8333.36
+2026-08-01,Q3,Risk & Compliance,Opex,Professional fees,Cost,-1,45000.0,43604.1,,43604.1
+2026-08-01,Q3,Risk & Compliance,Opex,Salaries & benefits,Cost,-1,412500.0,382572.69,,382572.69
+2026-08-01,Q3,Risk & Compliance,Opex,Software & cloud,Cost,-1,70000.0,70264.99,,70264.99
+2026-08-01,Q3,Sales & Marketing,Opex,Marketing programs,Cost,-1,950000.0,426179.52,,426179.52
+2026-08-01,Q3,Sales & Marketing,Opex,Salaries & benefits,Cost,-1,780000.0,767837.33,,767837.33
+2026-08-01,Q3,Sales & Marketing,Opex,Software & cloud,Cost,-1,35000.0,38290.75,,38290.75
+2026-08-01,Q3,Sales & Marketing,Opex,Travel & entertainment,Cost,-1,60000.0,60112.56,,60112.56
+2026-09-01,Q3,Corporate,COGS,Fraud & chargeback losses,Cost,-1,374389.2,533237.02,,533237.02
+2026-09-01,Q3,Corporate,COGS,Interchange & scheme fees,Cost,-1,9870100.5,10546294.77,,10546294.77
+2026-09-01,Q3,Corporate,COGS,Processing & bank fees,Cost,-1,666621.6,714682.85,,714682.85
+2026-09-01,Q3,Corporate,Revenue,ACH,Revenue,1,730930.5,732143.22,,732143.22
+2026-09-01,Q3,Corporate,Revenue,Card processing - Enterprise,Revenue,1,7603830.0,8483972.4,,8483972.4
+2026-09-01,Q3,Corporate,Revenue,Card processing - SMB,Revenue,1,8294986.0,7795824.32,,7795824.32
+2026-09-01,Q3,Corporate,Revenue,Instant payouts (RTP),Revenue,1,468660.0,616145.38,,616145.38
+2026-09-01,Q3,Corporate,Revenue,Interest on client float,Revenue,1,1593750.0,1728825.0,,1728825.0
+2026-09-01,Q3,Corporate,Revenue,Platform subscriptions,Revenue,1,1299428.05,1284674.74,,1284674.74
+2026-09-01,Q3,Customer Support,Opex,Contractors,Cost,-1,40000.0,40056.64,,40056.64
+2026-09-01,Q3,Customer Support,Opex,Salaries & benefits,Cost,-1,397500.0,398382.23,,398382.23
+2026-09-01,Q3,Customer Support,Opex,Software & cloud,Cost,-1,55000.0,53752.03,,53752.03
+2026-09-01,Q3,Engineering,Opex,Contractors,Cost,-1,90000.0,201430.98,,201430.98
+2026-09-01,Q3,Engineering,Opex,Salaries & benefits,Cost,-1,1872500.0,1743825.55,,1743825.55
+2026-09-01,Q3,Engineering,Opex,Software & cloud,Cost,-1,420000.0,434203.98,,434203.98
+2026-09-01,Q3,Engineering,Opex,Travel & entertainment,Cost,-1,15000.0,15102.11,,15102.11
+2026-09-01,Q3,G&A,Opex,Professional fees,Cost,-1,120000.0,292910.65,,292910.65
+2026-09-01,Q3,G&A,Opex,Rent & facilities,Cost,-1,260000.0,250737.72,,250737.72
+2026-09-01,Q3,G&A,Opex,Salaries & benefits,Cost,-1,445500.0,449507.02,,449507.02
+2026-09-01,Q3,G&A,Opex,Software & cloud,Cost,-1,30000.0,30005.42,,30005.42
+2026-09-01,Q3,G&A,Opex,Travel & entertainment,Cost,-1,10000.0,10027.69,,10027.69
+2026-09-01,Q3,Product,Opex,Salaries & benefits,Cost,-1,445500.0,454167.1,,454167.1
+2026-09-01,Q3,Product,Opex,Software & cloud,Cost,-1,40000.0,40462.8,,40462.8
+2026-09-01,Q3,Product,Opex,Travel & entertainment,Cost,-1,8000.0,7957.92,,7957.92
+2026-09-01,Q3,Risk & Compliance,Opex,Professional fees,Cost,-1,45000.0,44186.32,,44186.32
+2026-09-01,Q3,Risk & Compliance,Opex,Salaries & benefits,Cost,-1,425000.0,398310.36,,398310.36
+2026-09-01,Q3,Risk & Compliance,Opex,Software & cloud,Cost,-1,70000.0,73334.48,,73334.48
+2026-09-01,Q3,Sales & Marketing,Opex,Marketing programs,Cost,-1,950000.0,388728.85,,388728.85
+2026-09-01,Q3,Sales & Marketing,Opex,Salaries & benefits,Cost,-1,793000.0,764198.01,,764198.01
+2026-09-01,Q3,Sales & Marketing,Opex,Software & cloud,Cost,-1,35000.0,35895.96,,35895.96
+2026-09-01,Q3,Sales & Marketing,Opex,Travel & entertainment,Cost,-1,60000.0,60644.66,,60644.66
+2026-10-01,Q4,Corporate,COGS,Fraud & chargeback losses,Cost,-1,368104.8,,415653.21,415653.21
+2026-10-01,Q4,Corporate,COGS,Interchange & scheme fees,Cost,-1,9704864.5,,10453382.26,10453382.26
+2026-10-01,Q4,Corporate,COGS,Processing & bank fees,Cost,-1,655207.2,,715901.26,715901.26
+2026-10-01,Q4,Corporate,Revenue,ACH,Revenue,1,716089.5,,724535.3,724535.3
+2026-10-01,Q4,Corporate,Revenue,Card processing - Enterprise,Revenue,1,7486335.0,,8446987.98,8446987.98
+2026-10-01,Q4,Corporate,Revenue,Card processing - SMB,Revenue,1,8142678.0,,7751732.55,7751732.55
+2026-10-01,Q4,Corporate,Revenue,Instant payouts (RTP),Revenue,1,463700.0,,597699.84,597699.84
+2026-10-01,Q4,Corporate,Revenue,Interest on client float,Revenue,1,1593750.0,,1722150.0,1722150.0
+2026-10-01,Q4,Corporate,Revenue,Platform subscriptions,Revenue,1,1312422.33,,1312422.33,1312422.33
+2026-10-01,Q4,Customer Support,Opex,Contractors,Cost,-1,40000.0,,74384.97,74384.97
+2026-10-01,Q4,Customer Support,Opex,Salaries & benefits,Cost,-1,397500.0,,383945.34,383945.34
+2026-10-01,Q4,Customer Support,Opex,Software & cloud,Cost,-1,55000.0,,58733.58,58733.58
+2026-10-01,Q4,Engineering,Opex,Contractors,Cost,-1,90000.0,,167366.19,167366.19
+2026-10-01,Q4,Engineering,Opex,Salaries & benefits,Cost,-1,1907500.0,,1842454.7,1842454.7
+2026-10-01,Q4,Engineering,Opex,Software & cloud,Cost,-1,420000.0,,448510.95,448510.95
+2026-10-01,Q4,Engineering,Opex,Travel & entertainment,Cost,-1,15000.0,,15181.25,15181.25
+2026-10-01,Q4,G&A,Opex,Professional fees,Cost,-1,120000.0,,156363.64,156363.64
+2026-10-01,Q4,G&A,Opex,Rent & facilities,Cost,-1,260000.0,,257473.74,257473.74
+2026-10-01,Q4,G&A,Opex,Salaries & benefits,Cost,-1,459000.0,,443348.21,443348.21
+2026-10-01,Q4,G&A,Opex,Software & cloud,Cost,-1,30000.0,,32036.5,32036.5
+2026-10-01,Q4,G&A,Opex,Travel & entertainment,Cost,-1,10000.0,,10120.83,10120.83
+2026-10-01,Q4,Product,Opex,Salaries & benefits,Cost,-1,445500.0,,430308.55,430308.55
+2026-10-01,Q4,Product,Opex,Software & cloud,Cost,-1,40000.0,,42715.33,42715.33
+2026-10-01,Q4,Product,Opex,Travel & entertainment,Cost,-1,8000.0,,8096.67,8096.67
+2026-10-01,Q4,Risk & Compliance,Opex,Professional fees,Cost,-1,45000.0,,58636.36,58636.36
+2026-10-01,Q4,Risk & Compliance,Opex,Salaries & benefits,Cost,-1,425000.0,,410507.6,410507.6
+2026-10-01,Q4,Risk & Compliance,Opex,Software & cloud,Cost,-1,70000.0,,74751.83,74751.83
+2026-10-01,Q4,Sales & Marketing,Opex,Marketing programs,Cost,-1,350000.0,,710000.0,710000.0
+2026-10-01,Q4,Sales & Marketing,Opex,Salaries & benefits,Cost,-1,806000.0,,778515.59,778515.59
+2026-10-01,Q4,Sales & Marketing,Opex,Software & cloud,Cost,-1,35000.0,,37375.91,37375.91
+2026-10-01,Q4,Sales & Marketing,Opex,Travel & entertainment,Cost,-1,60000.0,,60725.0,60725.0
+2026-11-01,Q4,Corporate,COGS,Fraud & chargeback losses,Cost,-1,395446.2,,446526.33,446526.33
+2026-11-01,Q4,Corporate,COGS,Interchange & scheme fees,Cost,-1,10426180.5,,11230332.0,11230332.0
+2026-11-01,Q4,Corporate,COGS,Processing & bank fees,Cost,-1,703634.4,,768814.44,768814.44
+2026-11-01,Q4,Corporate,Revenue,ACH,Revenue,1,766525.5,,775566.16,775566.16
+2026-11-01,Q4,Corporate,Revenue,Card processing - Enterprise,Revenue,1,8053290.0,,9086695.13,9086695.13
+2026-11-01,Q4,Corporate,Revenue,Card processing - SMB,Revenue,1,8733437.0,,8314128.08,8314128.08
+2026-11-01,Q4,Corporate,Revenue,Instant payouts (RTP),Revenue,1,501270.0,,646126.8,646126.8
+2026-11-01,Q4,Corporate,Revenue,Interest on client float,Revenue,1,1593750.0,,1722150.0,1722150.0
+2026-11-01,Q4,Corporate,Revenue,Platform subscriptions,Revenue,1,1325546.55,,1325546.55,1325546.55
+2026-11-01,Q4,Customer Support,Opex,Contractors,Cost,-1,40000.0,,74384.97,74384.97
+2026-11-01,Q4,Customer Support,Opex,Salaries & benefits,Cost,-1,405000.0,,391189.59,391189.59
+2026-11-01,Q4,Customer Support,Opex,Software & cloud,Cost,-1,55000.0,,58733.58,58733.58
+2026-11-01,Q4,Engineering,Opex,Contractors,Cost,-1,90000.0,,167366.19,167366.19
+2026-11-01,Q4,Engineering,Opex,Salaries & benefits,Cost,-1,1925000.0,,1859357.95,1859357.95
+2026-11-01,Q4,Engineering,Opex,Software & cloud,Cost,-1,420000.0,,448510.95,448510.95
+2026-11-01,Q4,Engineering,Opex,Travel & entertainment,Cost,-1,15000.0,,15181.25,15181.25
+2026-11-01,Q4,G&A,Opex,Professional fees,Cost,-1,120000.0,,156363.64,156363.64
+2026-11-01,Q4,G&A,Opex,Rent & facilities,Cost,-1,260000.0,,257473.74,257473.74
+2026-11-01,Q4,G&A,Opex,Salaries & benefits,Cost,-1,459000.0,,443348.21,443348.21
+2026-11-01,Q4,G&A,Opex,Software & cloud,Cost,-1,30000.0,,32036.5,32036.5
+2026-11-01,Q4,G&A,Opex,Travel & entertainment,Cost,-1,10000.0,,10120.83,10120.83
+2026-11-01,Q4,Product,Opex,Salaries & benefits,Cost,-1,462000.0,,446245.91,446245.91
+2026-11-01,Q4,Product,Opex,Software & cloud,Cost,-1,40000.0,,42715.33,42715.33
+2026-11-01,Q4,Product,Opex,Travel & entertainment,Cost,-1,8000.0,,8096.67,8096.67
+2026-11-01,Q4,Risk & Compliance,Opex,Professional fees,Cost,-1,45000.0,,58636.36,58636.36
+2026-11-01,Q4,Risk & Compliance,Opex,Salaries & benefits,Cost,-1,437500.0,,422581.35,422581.35
+2026-11-01,Q4,Risk & Compliance,Opex,Software & cloud,Cost,-1,70000.0,,74751.83,74751.83
+2026-11-01,Q4,Sales & Marketing,Opex,Marketing programs,Cost,-1,350000.0,,710000.0,710000.0
+2026-11-01,Q4,Sales & Marketing,Opex,Salaries & benefits,Cost,-1,806000.0,,778515.59,778515.59
+2026-11-01,Q4,Sales & Marketing,Opex,Software & cloud,Cost,-1,35000.0,,37375.91,37375.91
+2026-11-01,Q4,Sales & Marketing,Opex,Travel & entertainment,Cost,-1,60000.0,,60725.0,60725.0
+2026-12-01,Q4,Corporate,COGS,Fraud & chargeback losses,Cost,-1,397701.6,,449073.06,449073.06
+2026-12-01,Q4,Corporate,COGS,Interchange & scheme fees,Cost,-1,10486131.5,,11294906.9,11294906.9
+2026-12-01,Q4,Corporate,COGS,Processing & bank fees,Cost,-1,707410.4,,772940.22,772940.22
+2026-12-01,Q4,Corporate,Revenue,ACH,Revenue,1,768136.5,,777196.16,777196.16
+2026-12-01,Q4,Corporate,Revenue,Card processing - Enterprise,Revenue,1,8110170.0,,9150874.02,9150874.02
+2026-12-01,Q4,Corporate,Revenue,Card processing - SMB,Revenue,1,8769136.0,,8348113.11,8348113.11
+2026-12-01,Q4,Corporate,Revenue,Instant payouts (RTP),Revenue,1,507300.0,,653899.35,653899.35
+2026-12-01,Q4,Corporate,Revenue,Interest on client float,Revenue,1,1593750.0,,1722150.0,1722150.0
+2026-12-01,Q4,Corporate,Revenue,Platform subscriptions,Revenue,1,1338802.02,,1338802.02,1338802.02
+2026-12-01,Q4,Customer Support,Opex,Contractors,Cost,-1,40000.0,,74384.97,74384.97
+2026-12-01,Q4,Customer Support,Opex,Salaries & benefits,Cost,-1,405000.0,,391189.59,391189.59
+2026-12-01,Q4,Customer Support,Opex,Software & cloud,Cost,-1,55000.0,,58733.58,58733.58
+2026-12-01,Q4,Engineering,Opex,Contractors,Cost,-1,90000.0,,167366.19,167366.19
+2026-12-01,Q4,Engineering,Opex,Salaries & benefits,Cost,-1,1960000.0,,1893164.46,1893164.46
+2026-12-01,Q4,Engineering,Opex,Software & cloud,Cost,-1,420000.0,,448510.95,448510.95
+2026-12-01,Q4,Engineering,Opex,Travel & entertainment,Cost,-1,15000.0,,15181.25,15181.25
+2026-12-01,Q4,G&A,Opex,Professional fees,Cost,-1,120000.0,,156363.64,156363.64
+2026-12-01,Q4,G&A,Opex,Rent & facilities,Cost,-1,260000.0,,257473.74,257473.74
+2026-12-01,Q4,G&A,Opex,Salaries & benefits,Cost,-1,459000.0,,443348.21,443348.21
+2026-12-01,Q4,G&A,Opex,Software & cloud,Cost,-1,30000.0,,32036.5,32036.5
+2026-12-01,Q4,G&A,Opex,Travel & entertainment,Cost,-1,10000.0,,10120.83,10120.83
+2026-12-01,Q4,Product,Opex,Salaries & benefits,Cost,-1,462000.0,,446245.91,446245.91
+2026-12-01,Q4,Product,Opex,Software & cloud,Cost,-1,40000.0,,42715.33,42715.33
+2026-12-01,Q4,Product,Opex,Travel & entertainment,Cost,-1,8000.0,,8096.67,8096.67
+2026-12-01,Q4,Risk & Compliance,Opex,Professional fees,Cost,-1,45000.0,,58636.36,58636.36
+2026-12-01,Q4,Risk & Compliance,Opex,Salaries & benefits,Cost,-1,437500.0,,422581.35,422581.35
+2026-12-01,Q4,Risk & Compliance,Opex,Software & cloud,Cost,-1,70000.0,,74751.83,74751.83
+2026-12-01,Q4,Sales & Marketing,Opex,Marketing programs,Cost,-1,350000.0,,710000.0,710000.0
+2026-12-01,Q4,Sales & Marketing,Opex,Salaries & benefits,Cost,-1,819000.0,,791072.29,791072.29
+2026-12-01,Q4,Sales & Marketing,Opex,Software & cloud,Cost,-1,35000.0,,37375.91,37375.91
+2026-12-01,Q4,Sales & Marketing,Opex,Travel & entertainment,Cost,-1,60000.0,,60725.0,60725.0
