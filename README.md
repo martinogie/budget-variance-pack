@@ -11,7 +11,12 @@ close. It has three parts:
 
 **[Open the interactive pack](https://martinogie.github.io/budget-variance-pack/)** ·
 **[Download the Excel workbook](reports/FY2026_Budget_vs_Actual_Variance_Pack.xlsx)** ·
-[Commentary](reports/COMMENTARY.md)
+[Commentary](reports/COMMENTARY.md) ·
+**[Tableau dashboard](https://public.tableau.com/app/profile/martins.ogiekpolor/viz/FY2026BudgetvsActualVarianceDashboard/FY2026BudgetvsActual)**
+
+The Tableau Public dashboard is built from [tableau/budget_vs_actual.csv](tableau/budget_vs_actual.csv):
+one row per month, department and P&L line, with budget, actual, Q4 forecast and a sign column
+(+1 revenue, −1 cost) so EBITDA and favourable/unfavourable variance are simple calculated fields.
 
 ![Results](reports/results.png)
 
