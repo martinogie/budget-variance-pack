@@ -38,7 +38,7 @@ Variance Color     = IF([Variance vs Budget] >= 0, "#1BAF7A", "#D03B3B")   -- co
 
 ### Tableau version
 
-The Tableau Public dashboard is built from [tableau/budget_vs_actual.csv](tableau/budget_vs_actual.csv):
+The Tableau Public dashboard (navy and white finance layout: KPI cards with arrows against budget, question-style chart titles, click-to-filter bars) is built from [tableau/budget_vs_actual.csv](tableau/budget_vs_actual.csv). The workbook is [tableau/FY2026_Budget_vs_Actual.twbx](tableau/FY2026_Budget_vs_Actual.twbx):
 one row per month, department and P&L line, with budget, actual, Q4 forecast and a sign column
 (+1 revenue, −1 cost) so EBITDA and favourable/unfavourable variance are simple calculated fields.
 
