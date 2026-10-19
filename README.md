@@ -133,7 +133,7 @@ to its cause.
 
 ## How this was built
 
-Built with AI-assisted coding (Claude). The analysis, structure and review are my own.
+Built with AI-assisted coding. The analysis, structure and review are my own.
 
 ## License
 
